@@ -1,7 +1,7 @@
 function Header() {
   return (
     <>
-      <header className="text-white shadow-lg">
+      <header className="text-white shadow-lg border-b border-gray-800">
         <div className="sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* logo section */}
