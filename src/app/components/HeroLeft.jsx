@@ -2,7 +2,7 @@ import { ChevronRight } from "lucide-react";
 
 const HeroLeft = () => {
   return (
-    <div className="flex flex-col justify-center h-full px-8 lg:px-16 mb-8">
+    <div className="flex flex-col justify-center h-full px-8 lg:px-16 mb-8 bg-black">
       <h1 className="text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
         Chat SDK
       </h1>
@@ -12,7 +12,7 @@ const HeroLeft = () => {
         building powerful chatbot applications.
       </p>
 
-      <div className="flex flex-col sm:flex-row gap-4">
+      <div className="flex flex-col sm:flex-row gap-4 pb-5">
         <button className="flex items-center justify-center gap-3 bg-white text-black px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-colors duration-200">
           Get Started
           <ChevronRight size={20} />
