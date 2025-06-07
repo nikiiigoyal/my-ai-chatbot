@@ -38,7 +38,7 @@ function Header() {
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition-colors duration-200"
               >
-                <Github size={20} Github />
+                <Github size={20} />
               </a>
             </div>
           </div>
