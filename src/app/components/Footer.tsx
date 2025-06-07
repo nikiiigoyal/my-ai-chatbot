@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Resources */}
+          
           <div>
             <h3 className="text-base font-medium mb-6 text-gray-400">Resources</h3>
             <ul className="space-y-3">
