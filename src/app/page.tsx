@@ -10,7 +10,7 @@ export default function Home() {
     <>
     <Header />
     <div className='mx-auto w-[80%] border border-gray-800 mt-12'>
-    <div className=' grid grid-cols-1 lg:grid-cols-2 border-b border-gray-800'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 border-b border-gray-800'>
     <HeroLeft />
     <ChatDemo />
     </div>
