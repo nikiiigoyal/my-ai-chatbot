@@ -3,7 +3,7 @@ import { ChevronRight } from "lucide-react";
 const HeroLeft = () => {
   return (
     <div className="flex flex-col justify-center h-full px-8 lg:px-16 mb-8 bg-black">
-      <h1 className="text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
+      <h1 className="text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight sm:text-center">
         Chat SDK
       </h1>
 
