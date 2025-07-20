@@ -1,4 +1,5 @@
 import { Github, GithubIcon } from "lucide-react";
+import SearchBar from "./SearchBar";
 
 function Header() {
   return (
@@ -21,18 +22,7 @@ function Header() {
             {/* Right Side - Search and GitHub */}
             <div className="hidden md:flex items-center space-x-6">
               {/* Search Bar */}
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  className="bg-[hsla(0,0%,4%,1)] hover:bg-[0,0,100%,0.09] border-[0,0,100%,0.14%] text-white placeholder-gray-500 rounded-md px-3 py-1.5 pr-8 focus:outline-none focus:ring-1 focus:ring-gray-600 w-48 text-sm"
-                />
-                <div className="flex w-full items-center justify-center rounded border border-gray-200 font-sans text-sm group-hover:border-gray-aplha-400">
-                  <kbd className="flex h-5 min-h-5 w-fit items-center px-1 py-0 text-center font-sans text-xs">
-                    /
-                  </kbd>
-                </div>
-              </div>
+              <SearchBar />
 
               {/* GitHub Link */}
               <a
