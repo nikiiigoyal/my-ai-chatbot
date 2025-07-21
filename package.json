@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@ai-sdk/deepseek": "^0.2.14",
+    "@fontsource/geist-mono": "^5.2.6",
+    "@fontsource/geist-sans": "^5.2.5",
     "@tailwindcss/postcss": "^4.1.8",
     "ai": "^4.3.16",
     "autoprefixer": "^10.4.20",
