@@ -4,7 +4,7 @@ import SearchBar from "./SearchBar";
 function Header() {
   return (
     <>
-      <header className="bg-black text-white shadow-lg border-b border-gray-800">
+      <header className="bg-black text-white shadow-lg border-b border-gray-800 cursor-pointer">
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* logo section */}
@@ -12,10 +12,10 @@ function Header() {
               <div className="w-6 h-6 rounded flex items-center justify-center">
                 <span className="text-white font-bold text-sm">▲</span>
               </div>
-              <div className="bg-gray-alpha-400"> / </div>
+              <div className="bg-gray-alpha-400 text-gray-600"> / </div>
               <div className="flex items-center space-x-1">
-                <span className="text-lg font-bold">Chat SDK</span>
-                <span className="text-gray-400 text-base ml-4">Docs</span>
+                <span className="text-lg font-semibold ">Chat SDK</span>
+                <span className="text-gray-1000 text-sm ml-4">Docs</span>
               </div>
             </div>
 
