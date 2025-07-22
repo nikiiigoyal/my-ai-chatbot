@@ -10,10 +10,10 @@ export default function ChatDemo() {
     });
 
   return (
-    <div className="flex flex-col h-full bg-gray-850 border-l-2 border-gray-800">
-      <div className="rounded-2xl p-4 md:p-6 mx-auto w-full h-full flex flex-col">
+    <div className="flex flex-col items-center h-full bg-[hsla(0,0%,4%,1)] border-l-0 border-gray-800">
+      <div className="md:p-6 flex flex-col justify-center gap-10">
         {/* Chat Header */}
-        <div className="flex items-center gap-3 mb-4 md:mb-6">
+        <div className="flex flex-row items-center gap-3 mb-4 md:mb-6">
           <div className="text-blue-400">
             <Sparkles size={20} />
           </div>
@@ -23,10 +23,10 @@ export default function ChatDemo() {
         </div>
 
         {/* Messages Container */}
-        <div className="flex-1 overflow-y-auto space-y-3 md:space-y-4 mb-4 md:mb-6 px-2">
+        <div className="overflow-y-auto space-y-3 md:space-y-4 mb-4 md:mb-6 px-2">
           {messages.length === 0 ? (
             <div className="text-center text-gray-400 mt-8">
-              <p>Start a conversation with AI!</p>
+              {/* <p>Start a conversation with AI!</p> */}
             </div>
           ) : (
             messages.map((message) => (
@@ -76,24 +76,25 @@ export default function ChatDemo() {
             value={input}
             onChange={handleInputChange}
             placeholder="Send a message..."
-            className="w-full bg-gray-800 rounded-xl px-4 py-3 md:py-4 pr-12 text-white placeholder-gray-400 resize-none h-20 md:h-24 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm md:text-base"
+            className="h-[128px] bg-[hsla(0,0%,16%,1)] rounded-xl px-4 py-3 md:py-4 pr-12 text-white placeholder-gray-400 md:h-24 focus:outline-none  text-sm md:text-base"
             disabled={isLoading}
-            rows={3}
+            rows={1}
           />
+
           <button
             type="submit"
             disabled={isLoading || !input.trim()}
-            className="absolute bottom-3 md:bottom-4 right-4 bg-gray-700 hover:bg-gray-600 p-2 rounded-lg transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="absolute bottom-3 md:bottom-4 right-4 bg-[(hsla(0,0%,10%,1))] border border-[(hsla(0,0%,15%,1)] hover:bg-gray-600 p-2 rounded-full transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isLoading ? (
-              <div className="flex space-x-1">
-                <div className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce"></div>
+              <div className="flex">
+                <div className="w-2 h-2 bg-[hsla(0,0%,10%,1)] rounded-full animate-bounce"></div>
                 <div
-                  className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce"
+                  className="w-2 h-2 bg-[hsla(0,0%,10%,1)] rounded-full animate-bounce"
                   style={{ animationDelay: "0.1s" }}
                 ></div>
                 <div
-                  className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce"
+                  className="w-2 h-2 bg-[hsla(0,0%,10%,1)] rounded-full animate-bounce"
                   style={{ animationDelay: "0.2s" }}
                 ></div>
               </div>
