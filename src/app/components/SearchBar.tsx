@@ -78,7 +78,7 @@ function SearchBar() {
       <div className="relative ">
   <button 
     onClick={handleSearchClick} 
-    className="block w-full group" // Added 'group' class for parent-state styling
+    className="block w-full group" 
   >
     <input
       type="text"
