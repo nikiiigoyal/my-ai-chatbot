@@ -1,5 +1,5 @@
 import { ChevronRight } from 'lucide-react';
-import Link from 'next/link';
+
 
 const HeroSection: React.FC = () => {
   return (
@@ -9,21 +9,31 @@ const HeroSection: React.FC = () => {
       </h1>
       
       <div className="flex flex-row items-center gap-3 sm:gap-4 lg:justify-end flex-shrink-0">
-        <Link 
-          href="/deploy" 
-          className="bg-white text-black px-3 sm:px-4 md:px-6 py-2.5 sm:py-3 rounded-lg font-medium text-xs sm:text-sm md:text-base hover:bg-gray-100 transition-all duration-200 hover:-translate-y-0.5 flex items-center justify-center gap-2 whitespace-nowrap"
+        <button
+          className="flex items-center max-w-100 bg-[hsla(0,0%,93%,1)] px-[18px] sm:px-[10px] sm:h-[40px] py-2 rounded-md border border-gray-700  transition-[border-color,background,color,transform,box-shadow] duration-150 ease-in-out font-medium text-[hsla(0,0%,4%,1)]  hover:bg-[#ccc]    
+  text-sm
+  leading-[1.25rem]
+          h-[48px]     
+  cursor-pointer 
+  shadow-xs
+  hover:opacity-90"
         >
-          <span className="text-xs sm:text-sm">▲</span>
-          Deploy on Vercel
-        </Link>
+         <span className='px-2'>▲</span>
+         Deploy on Vercel
+        </button>
         
-        <Link 
-          href="/get-started" 
-          className="bg-transparent text-white border border-gray-700 px-3 sm:px-4 md:px-6 py-2.5 sm:py-3 rounded-lg font-medium text-xs sm:text-sm md:text-base hover:border-gray-500 hover:bg-white/5 transition-all duration-200 flex items-center justify-center gap-2 whitespace-nowrap"
+       <button
+          className="flex items-center max-w-100 bg-[hsla(0,0%,4%,1)] lg:px-4 px-5 sm:h-[40px] py-5 rounded-md border border-[hsla(0,0%,100%,0.14)]  transition-[border-color,background,color,transform,box-shadow] duration-100 ease-in-out font-medium text-[hsla(0,0%,93%,1)]  hover:bg-[hsla(0,0%,100%,.09)]    
+  text-sm
+  leading-[1.25rem]
+          h-[48px]     
+  cursor-pointer 
+  shadow-xs
+  hover:opacity-90"
         >
-          Get Started
-         <ChevronRight size={16} />
-        </Link>
+          Get started
+          <ChevronRight size={16}/>
+        </button>
       </div>
     </section>
   );
