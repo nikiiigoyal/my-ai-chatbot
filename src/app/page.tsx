@@ -4,7 +4,7 @@ import ChatDemo from './components/HeroRight'
 import Features from './components/Features';
 import HeroSection from "./components/LastSection"
 import Footer from './components/Footer';
-import { CrossIcon, PlusIcon } from 'lucide-react';
+import { PlusIcon } from 'lucide-react';
 
 export default function Home() {
   return (
