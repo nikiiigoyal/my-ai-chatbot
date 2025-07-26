@@ -1,3 +1,4 @@
+import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 
 const HeroSection: React.FC = () => {
@@ -21,7 +22,7 @@ const HeroSection: React.FC = () => {
           className="bg-transparent text-white border border-gray-700 px-3 sm:px-4 md:px-6 py-2.5 sm:py-3 rounded-lg font-medium text-xs sm:text-sm md:text-base hover:border-gray-500 hover:bg-white/5 transition-all duration-200 flex items-center justify-center gap-2 whitespace-nowrap"
         >
           Get Started
-          <span>→</span>
+         <ChevronRight size={16} />
         </Link>
       </div>
     </section>
