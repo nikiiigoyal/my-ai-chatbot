@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <>
     <Header />
-    <div className='mx-auto w-[80%] border border-gray-800 mt-12'>
-    <div className='grid grid-cols-1 lg:grid-cols-2 border-b border-gray-800'>
+    <div className='mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12  border border-[hsla(0,0%,14%,1)] mt-6 sm:mt-8 md:mt-12'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 border-b border-[hsla(0,0%,14%,1)]'>
     <HeroLeft />
     <ChatDemo />
     </div>
