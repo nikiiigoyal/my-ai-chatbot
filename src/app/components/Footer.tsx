@@ -161,7 +161,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Footer Bottom - Icons */}
-        <div className="flex md:justify-end justify-center items-center mt-12 pt-8 cursor-pointer">
+        <div className="flex flex-shrink-0 md:justify-end items-center mt-12 pt-8 cursor-pointer">
           <div className="flex border border-[hsla(0,0%,18%,1)] rounded-4xl py-1 px-1">
             {/* Theme toggle icon */}
             <button className="w-7 h-7 rounded-lg flex items-center justify-center hover:border-gray-500 hover:bg-white/5 transition-all duration-200 data-[active=true]:bg-[hsla(0,0%,16%,1)] data-[active=true]:text-[hsla(0,0%,93%,1)] data-[active=true]:border-gray-300">
