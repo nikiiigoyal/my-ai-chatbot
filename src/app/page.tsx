@@ -15,7 +15,7 @@ export default function Home() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12 mt-6 sm:mt-8 md:mt-12">
         
         {/* Cross icon positioned on the left side of the border */}
-        <div className="absolute -top-5 -left-4 sm:left-10 md:left-12 lg:left-5 bg-black px-2 text-[#f9e9e9] text-2xl cursor-pointer hover:text-gray-300 transition-colors z-10">
+        <div className="absolute -top-5 -left-3 sm:left-10 md:left-12 lg:left-5 bg-black px-2 text-[#f9e9e9] text-2xl cursor-pointer hover:text-gray-300 transition-colors z-10">
           <PlusIcon size={40} color='gray' strokeWidth={1}/>
         </div>
         
