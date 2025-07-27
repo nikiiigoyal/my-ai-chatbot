@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { ArrowUp, Sparkles, Paperclip } from "lucide-react";
+import { ArrowUp, Sparkles } from "lucide-react";
 
 export default function ChatInputComponent() {
   const [messages, setMessages] = useState([]);
@@ -37,7 +37,7 @@ export default function ChatInputComponent() {
 
   return (
     <div className="flex flex-col justify-center h-full bg-[hsla(0,0%,4%,1)] border-l-0 border-gray-800 my-8">
-      <div className="md:p-6 flex flex-col justify-around w-full max-w-4xl">
+      <div className="md:p-6 flex flex-col justify-around ml-2 w-full max-w-4xl">
         {/* Chat Header */}
         <div className="flex flex-row items-center gap-3 mb-4 md:mb-6">
           <div className="text-blue-400">
@@ -101,7 +101,7 @@ export default function ChatInputComponent() {
               value={input}
               onChange={handleInputChange}
               placeholder="Send a message..."
-              className="w-[80%] h-[150px] bg-[hsla(0,0%,16%,1)] rounded-xl px-3 py-3 md:py-4 pr-12 text-white placeholder-gray-400 md:h-10 focus:outline-none text-sm md:text-base resize-none"
+              className="w-[80%] h-[120px] bg-[hsla(0,0%,16%,1)] rounded-xl px-3 py-3 md:py-4 pr-12 text-white placeholder-gray-400 focus:outline-none text-sm md:text-base resize-none"
               disabled={isLoading}
               rows={1}
               onKeyDown={(e) => {
