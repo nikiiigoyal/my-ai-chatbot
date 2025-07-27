@@ -1,10 +1,11 @@
 import Header from './components/Header'
 import HeroLeft from './components/HeroLeft'
-import ChatDemo from './components/HeroRight'
+// import ChatDemo from './components/HeroRight'
 import Features from './components/Features';
 import HeroSection from "./components/LastSection"
 import Footer from './components/Footer';
 import { PlusIcon } from 'lucide-react';
+import ChatInputComponent from './components/ChatInputTab';
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
           
           <div className='grid grid-cols-1 lg:grid-cols-2 border-b border-[hsla(0,0%,14%,1)]'>
             <HeroLeft />
-            <ChatDemo />
+            <ChatInputComponent />
           </div>
           
           <Features />
