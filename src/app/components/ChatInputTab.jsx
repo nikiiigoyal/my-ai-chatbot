@@ -36,7 +36,7 @@ export default function ChatInputComponent() {
   };
 
   return (
-    <div className="flex flex-col justify-center h-full bg-[hsla(0,0%,4%,1)] border-l-0 border-gray-800 my-8">
+    <div className="flex flex-col justify-center bg-[hsla(0,0%,4%,1)] border-l-0 border-gray-800">
       <div className="md:p-6 flex flex-col justify-around ml-2 w-full max-w-4xl">
         {/* Chat Header */}
         <div className="flex flex-row items-center gap-3 mb-4 md:mb-6">
