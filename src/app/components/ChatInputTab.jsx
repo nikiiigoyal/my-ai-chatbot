@@ -36,7 +36,7 @@ export default function ChatInputComponent() {
   };
 
   return (
-    <div className="flex flex-col justify-center h-full bg-[hsla(0,0%,4%,1)] border-l-0 border-gray-800">
+    <div className="flex flex-col justify-center h-full bg-[hsla(0,0%,4%,1)] border-l-0 border-gray-800 my-8">
       <div className="md:p-6 flex flex-col justify-around w-full max-w-4xl">
         {/* Chat Header */}
         <div className="flex flex-row items-center gap-3 mb-4 md:mb-6">
@@ -101,7 +101,7 @@ export default function ChatInputComponent() {
               value={input}
               onChange={handleInputChange}
               placeholder="Send a message..."
-              className="w-[80%] h-[150px] bg-[hsla(0,0%,16%,1)] rounded-xl px-4 py-3 md:py-4 pr-12 text-white placeholder-gray-400 md:h-24 focus:outline-none text-sm md:text-base resize-none"
+              className="w-[80%] h-[150px] bg-[hsla(0,0%,16%,1)] rounded-xl px-3 py-3 md:py-4 pr-12 text-white placeholder-gray-400 md:h-10 focus:outline-none text-sm md:text-base resize-none"
               disabled={isLoading}
               rows={1}
               onKeyDown={(e) => {
@@ -115,7 +115,7 @@ export default function ChatInputComponent() {
             <button
               onClick={handleSubmit}
               disabled={isLoading || !input.trim()}
-              className="absolute md:bottom-4 right-27 bottom-7  bg-[hsla(0,0%,10%,1)] border border-[hsla(0,0%,15%,1)] hover:bg-gray-600 p-2 rounded-full transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="absolute bottom-8 right-[70px] md:bottom-4 lg:right-28 md:right-[106px] bg-[hsla(0,0%,10%,1)] border border-[hsla(0,0%,15%,1)] hover:bg-gray-600 p-2 rounded-full transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isLoading ? (
                 <div className="flex space-x-1">
